@@ -1,0 +1,432 @@
+/* Sets custom font for entire site */
+@font-face
+{
+    font-family: SkolarOT;
+    src: url(Skolar%20OT.otf);
+}
+
+/* Gives default color to html and default height */
+html
+{
+    background-color: #d9d4d4;
+    min-height: 100%;
+}
+
+/* Styles body */
+body
+{
+    width: 60%; /* Body 60% of screen */
+    margin-left: auto; /* Centres body */
+    margin-right: auto;
+    font-family: SkolarOT, 'Trebuchet MS', Arial; /* Sets fonts for site */
+}
+
+/* Psuedo elements which changes mouse highlight color */
+::-moz-selection
+{ /* Code for Firefox */
+    color: #FFF;
+    background-color: #AA0000;
+}
+
+::selection
+{
+    color: #FFF;
+    background-color: #AA0000;
+}
+
+/* Header always 80px; */
+header
+{
+    height: 80px;
+}
+
+/* Styles basket icon */
+#cart
+{
+    width: 60px;
+    margin-left: auto;
+    margin-right: 40px;
+    position: relative;
+    top: -77.5px;
+    color: white;
+}
+
+#cart i {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+#cart i:hover {
+    opacity: 1;
+}
+
+#cart span 
+{
+    display: block;
+    width:  30px;
+    height: 30px; 
+    line-height: 27px;
+    text-align: center; 
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #000;
+    color: #FFF;
+    font-size: large;
+    position: relative;
+    top: -30px;
+    left: 25px;
+}
+
+#cart a:active {
+    color: #FFF;
+    opacity: 1;
+}
+
+/* Styles website heading h1 */
+#heading
+{
+    background-color: #AA0000;
+    color: #FFF;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#heading a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Styles main content on all pages */
+#content
+{
+    padding: 10px 10px 0 10px;
+    margin-top: -23px;
+    background: linear-gradient(#bbbaba, #cfcaca);
+    min-height: 450px;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+}
+
+/* Styles back button */
+#back a 
+{
+    color: #FFF;
+    transition: 0.5s;
+}
+
+#back a:hover
+{
+    color: #AA0000;
+}
+
+#greeting {
+    font-weight: bold;
+}
+
+/* Styles image scroll appropriately */
+.imageContainer
+{
+    margin-top: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow-x: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.imageContainer td
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#price td 
+{
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#model td
+{
+    padding-top: 20px;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+#product img 
+{
+    margin-top: 1em;
+    margin-left: 25px;
+}
+
+#product hr {
+    margin-left: 250px;
+}
+
+#product #priceDivider
+{
+    margin-top: -45px;
+}
+
+#product .price
+{
+    margin-left: 250px;
+    margin-top: -200px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#product #desc
+{
+    margin-left: 250px;
+    font-size: large;
+    text-align: justify;
+}
+
+#product #quantity
+{
+    margin-left: 250px;
+    font-size: large;
+    color: #AA0000;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+#suggested
+{
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow-x: auto;
+    position: relative;
+    bottom: 0;
+}
+
+#suggested td
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Creates add to basket button style */
+#basket a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    left: 400px;
+    top: -57px;
+    width: 96px;
+    border: 1px solid #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+#basket a:hover {
+    color: #FFF;
+    background-color: #AA0000;
+    border: 1px solid #AA0000;
+}
+
+#addTo img 
+{
+    margin-top: 1em;
+    margin-left: 25px;
+}
+
+#addTo hr {
+    margin-left: 250px;
+}
+
+#addTo #priceDivider
+{
+    margin-top: -5px;
+}
+
+#addTo #price
+{
+    margin-left: 250px;
+    margin-top: -200px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#addTo #quantity
+{
+    margin-left: 250px;
+    font-size: large;
+}
+
+/* Styles remove from basket button */
+.delete 
+{
+    margin-top: 30px;
+}
+
+.delete a 
+{
+    text-decoration: none;
+    color: #000;
+    margin-left: 250px;
+    width: 96px;
+    border: 1px solid #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+.delete a:hover 
+{
+    color: #FFF;
+    background-color: #AA0000;
+    border: 1px solid #AA0000;
+}
+
+#yourBasket img
+{
+    margin-top: 1em;
+    margin-left: 25px;
+}
+
+#yourBasket hr {
+    margin-left: 250px;
+}
+
+#yourBasket .price
+{
+    margin-left: 250px;
+    margin-top: -200px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#yourBasket .quantity
+{
+    margin-left: 250px;
+    font-size: large;
+}
+
+#yourBasket .itemDivider 
+{
+    margin-top: 3em;
+    margin-left: 0;
+}
+
+/* Styles check out button */
+#checkOut 
+{
+    margin-top: -90px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    width: 164px;
+}
+
+#checkOut a 
+{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+#checkOut a:hover 
+{
+    color: #FFF;
+    background-color: #AA0000;
+    border: 1px solid #AA0000;
+}
+
+#quanChange input 
+{
+    display: inline;
+    margin-left: 250px;
+}
+
+#quanWarning
+{
+    display: inline;
+    margin-left: 10px;
+    color: #AA0000;
+}
+
+/* Styles total cost to make it distinct */
+#total
+{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Calibri, 'Trebuchet MS', SkolarOT;
+    margin-top: 30px;
+}
+
+/* Styles text input */
+input[type=text]
+{
+    border: 1px solid #dbd6d6;
+    border-radius: 2.5px;
+}
+
+input[type=email]
+{
+    border: 1px solid #dbd6d6;
+    border-radius: 2.5px;
+}
+
+input[type=password]
+{
+    border: 1px solid #dbd6d6;
+    border-radius: 2.5px;
+}
+
+.clientStyle
+{
+    margin-left: 5px;
+}
+
+/* Styles warning */
+.commonWarning {
+    color: #AA0000;
+    padding-left: 10px;
+}
+
+#recent
+{
+  margin-top: 20px;  
+}
+
+#order 
+{
+    margin-top: -90px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    width: 90px;
+}
+
+#order a 
+{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+#order a:hover 
+{
+    color: #FFF;
+    background-color: #AA0000;
+    border: 1px solid #AA0000;
+}
